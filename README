@@ -1,0 +1,18 @@
+Cypress test task is located in e2e folder.
+
+SQL test task:
+
+1. SELECT *
+   FROM people
+   WHERE first_name LIKE 'J%';
+
+2. SELECT gender, COUNT(*) AS count
+   FROM people
+   WHERE (month IN (6, 7, 8)) AND year > 2000
+   GROUP BY gender;
+
+3. SELECT p.first_name, p.last_name, c.number
+   FROM people p
+   JOIN cards c ON p.id = c.people_id
+   ORDER BY p.last_name, p.first_name;
+
